@@ -1,0 +1,8 @@
+#out-color {
+  display: block;
+  height:50px;
+  width: 50px;
+  border-radius: 5px; 
+  border: solid 1px;
+  background: #1EC9D6;
+}
