@@ -1,21 +1,43 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="lighten-up.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
-  <script type="text/javascript" src="lighten-up.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">  
 </head>
-  <body>
-    Input Color: <br>
-    <p><input type='text' id="in-color-text" placeholder="#1EC9D6"></p>
-    <p>
-      <button id='btn-lighten'>Lighten</button>
-      <button id='btn-darken'>Darken</button>
-    </p>
-    <p>
-      <div id='out-color'></div>
-      <div id='out-text'></div>
-    </p>
 
+<body class="window">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 sidebar bottom-buffer">
+        <h1>Lighten Up</h1>
+        <img src="images/fire-placeholder.png" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 sidebar">
+        <p><input type='text' id="in-color-text" class="form-control" placeholder="ex. #1EC9D6"></p>
+        <p>
+          <button id='btn-lighten' class = "btn btn-lighten">Lighten</button>
+          <button id='btn-darken' class = "btn btn-darken">Darken</button>
+        </p>
+      </div>
+      <div class="col-lg-10">
+        <!-- This is where output will go -->
+        <div class='output-row row'>
+          <div class="col-lg-2">
+            <input type='text' id="out-text-first" class="form-control out-text" placeholder= "#1EC9D6" disabled>
+          </div>
+          <div id='out-color-first' class = "out-color col-lg-8">
+            <span class="glyphicon glyphicon-remove remove-icon"></span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="lighten-up.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

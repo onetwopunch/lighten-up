@@ -1,8 +1,57 @@
-#out-color {
+.window{
+  background: #333;
+}
+body .container {
+  background: #dedede;
+}
+#out-color-first {
   display: block;
   height:50px;
-  width: 50px;
+
   border-radius: 5px; 
   border: solid 1px;
   background: #1EC9D6;
+}
+.sidebar {
+  border-right: solid 1px;
+}
+.remove-icon {
+  float:right;
+  margin-top:5px;
+  border-radius:5px;
+}
+.remove-icon:hover,
+.remove-icon:focus {
+  color: white;
+  cursor:pointer;
+}
+.bottom-buffer { padding-bottom:20px; }
+.btn-lighten {
+  color: #333;
+  background-color: #fff;
+  border-color: #222;
+}
+.btn-lighten:hover,
+.btn-lighten:focus,
+.btn-lighten:active,
+.btn-lighten.active,
+.open .dropdown-toggle.btn-lighten {
+  color: #333;
+  background-color: #eee;
+  border-color: #222;
+}
+
+.btn-darken {
+  color: #fff;
+  background-color: #333;
+  border-color: #ccc;
+}
+.btn-darken:hover,
+.btn-darken:focus,
+.btn-darken:active,
+.btn-darken.active,
+.open .dropdown-toggle.btn-darken {
+  color: #fff;
+  background-color: #555;
+  border-color: #adadad;
 }
